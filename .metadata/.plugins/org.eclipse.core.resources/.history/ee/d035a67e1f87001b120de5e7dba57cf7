@@ -1,0 +1,8 @@
+package com.example.demo;
+
+@Service
+public class FileUploadService {
+	public void uploadFile(MultipartFile file) {
+		
+	}
+}

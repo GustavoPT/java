@@ -1,0 +1,10 @@
+<body>
+<input id="fileupload" type="file" name="fileupload">
+<button id="upload-button" onclick="uploadFile()"></button>
+<script>
+	async function uploadFile(){
+		
+	}
+	
+</script>
+</body>

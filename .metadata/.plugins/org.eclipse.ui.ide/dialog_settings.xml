@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\gustx\Desktop\java\jsptest"/>
+		<item value="C:\Users\gustx\Desktop\java\LiquorStoreServlet-master"/>
+		<item value="C:\Users\gustx\Desktop\java\course files\cmsshoppingcart"/>
+		<item value="C:\Users\gustx\Desktop\java\cms-gus"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="576" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="403" key="DIALOG_X_ORIGIN"/>
+		<item value="212" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,6 @@
+<body>
+<input id="fileupload" type="file" name="fileupload">
+<button id="fileUploadButton"></button>
+<script>
+</script>
+</body>

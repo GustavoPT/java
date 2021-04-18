@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\gustx\Desktop\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3703758790.index
+\jsptest\src\main\java
+C:\Users\gustx\Desktop\java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2977818687.index
+\LiquorStoreServlet-master\src\main\java

@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Users\gustx\Desktop\java\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+32273029.index
+3308393723.index
+3362005600.index
+2455414542.index
+3167840100.index
+4032468543.index
+3703758790.index
+3286392469.index
+2464938461.index
