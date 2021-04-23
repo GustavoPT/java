@@ -80,10 +80,14 @@ class Transaction{
 	@Column(name="transaction_id")
 	int id;
 	
-	
-	double ammount;
-	
 	int date;
+	
+	// one to one 
+	// seller 
+	// one to one user 
+	// card 
+	
+	// seller 
 	
 	// 
 	@ManyToOne

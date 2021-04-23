@@ -2,12 +2,7 @@ package com.example.demo;
 
 import java.util.Optional;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,6 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.demo.entities.Book;
 import com.example.demo.entities.User;
+
+
+
 
 
 @Entity
@@ -78,25 +76,18 @@ class Transaction{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="transaction_id")
-	int id;
-	
-	
-	double ammount;
+	id;
 	
 	int date;
 	
+	// one to one 
+	// seller 
+	// one to one user 
+	// card 
+	
+	// seller 
+	
 	// 
-	@ManyToOne
-	@JoinColumn(name="user")
-	private User user;
-	
-	@ManyToOne
-	@JoinColumn(name="card")
-	private Card card;
-	
-	@ManyToOne
-	@JoinColumn(name="transaction")
-	private Transaction transaction;
 	
 }
 
@@ -111,8 +102,7 @@ class Account{
 	@ManyToOne
 	@JoinColumn(name="id")
 	private User user;
-	
-	
+		
 }
 
 

@@ -2,12 +2,7 @@ package com.example.demo;
 
 import java.util.Optional;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -20,24 +15,29 @@ import com.example.demo.entities.Book;
 import com.example.demo.entities.User;
 
 
+
+
+
 @Entity
 class User{
 	int id;
 	string name;
-	string password;
-	string use
 	
 	@OneToMany(mappedBy = "transaction")
 	private Set<Transaction> transactions = new Hash
 
-	@OneToMany(mappedBy="card")
-	private Set<Card> cards = new HashSet<>();
 
-	@OneToMany(mappedBy="account")
-	private Set<Account> accounts = new HashSet<>();
+    // card 
+	
+	@OneToMany(mappedBy="card")
+	private Set<Transaction> cards = new HashSet<>();
+
+	
+	
+	// 
+
 
 }
-
 @Entity
 class Product{
 	int id;
@@ -51,7 +51,6 @@ class Seller{
 	String name;
 	@OneToMany(mappedBy="product")
 	private Set<Product> products = new HashSet<>();
-	
 	
 }
 @Entity
@@ -67,7 +66,9 @@ class Card{
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-        
+    
+    // user has many cards 
+    
 }
 
 class Transaction{
@@ -76,43 +77,27 @@ class Transaction{
     // price 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy =)
 	@Column(name="transaction_id")
-	int id;
-	
-	
-	double ammount;
+	id;
 	
 	int date;
 	
+	// one to one 
+	// seller 
+	// one to one user 
+	// card 
+	
+	// seller 
+	
 	// 
-	@ManyToOne
-	@JoinColumn(name="user")
-	private User user;
-	
-	@ManyToOne
-	@JoinColumn(name="card")
-	private Card card;
-	
-	@ManyToOne
-	@JoinColumn(name="transaction")
-	private Transaction transaction;
 	
 }
 
 
-@Entity
-@Table(name="account")
-class Account{
-	
-	double balance;
-	String type;
 
-	@ManyToOne
-	@JoinColumn(name="id")
-	private User user;
-	
-	
+class Account{
+	double price;
 }
 
 
