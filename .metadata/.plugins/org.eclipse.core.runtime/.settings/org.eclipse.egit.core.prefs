@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Users\\gustx\\Desktop\\java\\fxcompanyboot\\.git;C\:\\Users\\gustx\\Desktop\\java\\course files\\cmsshoppingcart\\.git;
-GitRepositoriesView.GitDirectories.relative=fxcompanyboot\\.git;course files\\cmsshoppingcart\\.git;
+GitRepositoriesView.GitDirectories=C\:\\Users\\gustx\\Desktop\\java\\.git;C\:\\Users\\gustx\\Desktop\\java\\fxcompanyboot\\.git;C\:\\Users\\gustx\\Desktop\\java\\course files\\cmsshoppingcart\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;fxcompanyboot\\.git;course files\\cmsshoppingcart\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

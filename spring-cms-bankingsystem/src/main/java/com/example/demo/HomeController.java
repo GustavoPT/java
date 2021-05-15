@@ -386,6 +386,11 @@ public class HomeController {
 	@Autowired
 	UserRepository userRep;
 	
+	// repositories 
+	// for transactions 
+	// and all the others 
+	
+	
 	@RequestMapping("/register")
 	public String register(Model model){
 		model.addAttribute("User", new User());
@@ -399,9 +404,6 @@ public class HomeController {
 		System.out.println("adding to the db");
 	    model.addAttribute("user", user);
 		userRep.save(user);
-//	    User u2 = userRep.getOne((long) 2);
-//	    System.out.print(u2.getFirstName());
-//		
 	    return "index";
 	}
 	@RequestMapping("/login")
@@ -410,16 +412,41 @@ public class HomeController {
 		return "login";
 	}
 	
-	@RequestMapping("/logout")
-	public String logout(Model model) {
-//		model.addAttribute()
-		return "index";
+	@PostMapping("/addcard")
+	public String addcard(@ModelAttribute User user,Model model) {
+		
+		System.out.print("name" + user.getEmail());
+		System.out.println("adding to the db");
+	    model.addAttribute("user", user);
+		userRep.save(user);
+	    return "index";
 	}
-	@RequestMapping("/dashboard")
-	public String logout(Model model) {
-//		model.addAttribute()
-		return "dashboard";
+	
+	
+	@GetMapping("/addall")
+	public String addAll(@ModelAttribute User user,Model model)
+	{
+		// add some user 
+		// add some transaction 
+		// add some seller 
+		// add some product 
+		// add some card 
+		// transaction -> seller -> product -> card 
+		
 	}
+//	@RequestMapping("/logout")
+//	public String logout(Model model) {
+////		model.addAttribute()
+//		return "index";
+//	}
+//	@RequestMapping("/dashboard")
+//	public String logout(Model model) {
+////		model.addAttribute()
+//		// query the tran
+//		
+//		
+//		return "dashboard";
+//	}
 
 	@PostMapping("/login")
 	public String login(@ModelAttribute User user,Model model) {
@@ -442,4 +469,14 @@ public class HomeController {
 		// TODO: pass a message to index 
 		return "index";
 	}
+	
+	@RequestMapping("/dashboard")
+	public String logout(Model model) {
+//		model.addAttribute()
+		// query the tran
+		
+		
+		return "dashboard";
+	}
+
 }
